@@ -1,0 +1,6 @@
+description = "core"
+
+mainClassName = "org.gruums.xlucene.MainCore"
+dependencies {
+    // compile project(':subprojectName')
+}
