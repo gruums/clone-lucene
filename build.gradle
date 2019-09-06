@@ -20,3 +20,19 @@ subprojects {
         // compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     }
 }
+
+// Task example:
+task taskA {
+    doLast {
+        println "I'm task A"
+    }
+}
+
+task taskB {
+    doLast {
+        println "I'm task B"
+    }
+}
+
+defaultTasks 'taskB'
+taskB.dependsOn taskA

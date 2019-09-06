@@ -4,3 +4,26 @@ mainClassName = "org.gruums.xlucene.MainCore"
 dependencies {
     // compile project(':subprojectName')
 }
+
+jar {
+    manifest {
+        attributes(
+            "Main-Class": "org.gruums.xlucene.MainCore"
+        )
+    }
+}
+
+// Declaring custom source directories
+// sourceSets {
+//     main {
+//          java {
+//             srcDirs = ['src']
+//          }
+//     }
+
+//     test {
+//         java {
+//             srcDirs = ['test']
+//         }
+//     }
+// }
