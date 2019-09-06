@@ -8,3 +8,10 @@
  */
 
 rootProject.name = 'xlucene'
+
+include 'core'
+
+// Rename default builFileName for sub-project.
+rootProject.children.each {
+    subProject -> subProject.buildFileName = "${subProject.name}.gradle"
+}
